@@ -13,8 +13,7 @@ public class CameraSwitch : MonoBehaviour
     private Transform _fpsCamTransform;
     private FpsCameraManager _fpsCamMana;
 
-    [SerializeField]
-    private CinemachineCamera _lockOnCam;//LockOnカメラ
+    private LockOnCameraManager _lockOnCamMana;
 
     public Transform FpsCamTransform => _fpsCamTransform;//カメラのTransformを取得するためのプロパティ
 
@@ -26,6 +25,7 @@ public class CameraSwitch : MonoBehaviour
         _fpsCam = _fpsCamObj.GetComponent<CinemachineCamera>();
         _fpsCamMana = _fpsCamObj.GetComponent<FpsCameraManager>();
         _fpsCamTransform = _fpsCamObj.transform;
+        _lockOnCamMana = _tpsCamera.GetComponent<LockOnCameraManager>();
     }
 
     void Update()
@@ -43,18 +43,16 @@ public class CameraSwitch : MonoBehaviour
     {
         isFirstPerson = !isFirstPerson;
 
-        if (isFirstPerson)
+        if (isFirstPerson && !_lockOnCamMana.IsLockOn)
         {
             _fpsCamMana.FpsCamInit();
             _tpsCamera.Priority = 0;
             _fpsCam.Priority = 10;
-            _lockOnCam.Priority = 0;
         }
         else
         {
             _tpsCamera.Priority = 10;
             _fpsCam.Priority = 0;
-            _lockOnCam.Priority = 0;
         }
     }
 }

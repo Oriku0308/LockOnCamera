@@ -35,10 +35,6 @@ public class PlayerMovement : MonoBehaviour
             _mouseX = Input.GetAxis("Mouse X") * _mouseSensitivity * Time.deltaTime;
         }
 
-    }
-
-    void FixedUpdate()
-    {
         //移動
         Vector3 _direction = new Vector3(_horizontal, 0, _vertical);
         _direction = Camera.main.transform.TransformDirection(_direction);

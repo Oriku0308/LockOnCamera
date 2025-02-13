@@ -63,10 +63,10 @@
   <ItemGroup>
     <Compile Include="Assets\scripts\LockOnCameraManager.cs" />
     <Compile Include="Assets\scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\scripts\LockOnManager.cs" />
     <Compile Include="Assets\scripts\FpsCameraManager.cs" />
     <Compile Include="Assets\scripts\PlayerController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\scripts\LockOnTargetManager.cs" />
     <Compile Include="Assets\scripts\CameraSwitch.cs" />
   </ItemGroup>
   <ItemGroup>

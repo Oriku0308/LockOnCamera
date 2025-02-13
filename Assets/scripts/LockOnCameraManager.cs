@@ -8,7 +8,7 @@ public class LockOnCameraManager : MonoBehaviour
     [SerializeField]
     private Transform _playerTransform;
     private LockOnTargetManager _lockOnManager;
-    private CinemachineOrbitalFollow _orbitalFollow;
+    private CinemachineOrbitalFollow _orbitalFollow;//‚±‚ê‚½‚Ì‚µ‚¢
 
     private CinemachineCamera _thisCamera;
     private Transform _nearEnemy;
@@ -46,7 +46,8 @@ public class LockOnCameraManager : MonoBehaviour
         _nearEnemy = _lockOnManager.NearEnemySearch();
         if (_nearEnemy == null)
         {
-            return;
+            _orbitalFollow.HorizontalAxis.Value = Vector3.SignedAngle(_initTransform, _playerTransform.forward, Vector3.up);
+            _isLockOn = !_isLockOn;
         }
         else
         {

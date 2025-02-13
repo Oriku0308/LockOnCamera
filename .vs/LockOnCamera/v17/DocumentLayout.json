@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vantan\\Unity\\LockOnCamera\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CB2077A-39A3-7196-19F4-4BAC3B994C5E}|Assembly-CSharp.csproj|c:\\users\\vantan\\unity\\lockoncamera\\assets\\scripts\\lockoncameramanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CB2077A-39A3-7196-19F4-4BAC3B994C5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lockoncameramanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LockOnCameraManager.cs",
+              "DocumentMoniker": "C:\\Users\\vantan\\Unity\\LockOnCamera\\Assets\\scripts\\LockOnCameraManager.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\LockOnCameraManager.cs",
+              "ToolTip": "C:\\Users\\vantan\\Unity\\LockOnCamera\\Assets\\scripts\\LockOnCameraManager.cs",
+              "RelativeToolTip": "Assets\\scripts\\LockOnCameraManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T01:22:13.031Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
